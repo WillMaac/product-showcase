@@ -1,3 +1,5 @@
+//Consumo de API: Crie um serviço de API que usa axios para interagir com os endpoints.
+
 import axios from "axios";
 
 const api = axios.create({
