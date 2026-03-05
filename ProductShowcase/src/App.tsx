@@ -1,16 +1,15 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
 
-import './App.css'
-
+//responsável por definir as rotas principais da aplicação
 function App() {
-  
-
   return (
-    
-      <div>
-        <h1>Teste</h1>
-      </div>
-       
-  )
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
